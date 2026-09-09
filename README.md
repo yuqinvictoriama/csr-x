@@ -1,4 +1,4 @@
-# Project Description ★
+# Source Code of the CSR-x Website ★
 This codebase establishes the source code for the CSR-x website, hosted on Cloudflare. CSR-x stands for Collaborative Summer Research eXperience. CSR-x is a free-of-charge, online summer research program serving high school students across the world since 2024. This program was started by Yuqin Victoria Ma (Stanford '30, src code author) and Yunshu Zhang (Berkeley '29) as a way to extend our passions for research and with the mission to make research opportunities accessible to more peers across the world. Through mentor-mentee cohorts, CSR-x allows students to dig deeper and engage with scholarly literature, working toward the goal of producing original quantitative results. For three summers (as of Sep 2026), CSR-x has served students from almost every continent in disciplines including biomedical & health sciences, environmental science, and data science/machine learning. 
 
 # Check out and follow our socials ★

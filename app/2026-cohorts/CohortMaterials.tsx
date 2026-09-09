@@ -19,14 +19,6 @@ export default function CohortMaterials({ cohorts }: { cohorts: ResearchCohort[]
 
   return (
     <>
-      <div className="materials-intro-row">
-        <p>Select a cohort to explore its 2026 research.</p>
-        <div className="materials-legend" aria-label="Materials availability legend">
-          <span><i className="availability-dot is-available" /> Materials available</span>
-          <span><i className="availability-dot" /> Coming soon</span>
-        </div>
-      </div>
-
       <div className="materials-grid">
         {cohorts.map((cohort) => {
           const hasMaterials = cohort.materials.length > 0;

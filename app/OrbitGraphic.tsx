@@ -126,9 +126,9 @@ export default function OrbitGraphic() {
 
   return (
     <div className="orbit-visual" data-orbit-cursor ref={graphicRef} aria-hidden="true">
-      <div className="orbit orbit-one"><i /></div>
-      <div className="orbit orbit-two"><i /></div>
-      <div className="orbit orbit-three"><i /></div>
+      <div className="orbit orbit-one"><svg viewBox="0 0 100 100" className="orbit-track"><circle className="orbit-line" cx="50" cy="50" r="50" /><circle className="orbit-dot" cx="50" cy="0" /></svg></div>
+      <div className="orbit orbit-two"><svg viewBox="0 0 100 100" className="orbit-track"><circle className="orbit-line" cx="50" cy="50" r="50" /><circle className="orbit-dot" cx="14.64466094" cy="85.35533906" /></svg></div>
+      <div className="orbit orbit-three"><svg viewBox="0 0 100 100" className="orbit-track"><circle className="orbit-line" cx="50" cy="50" r="50" /><circle className="orbit-dot" cx="100" cy="50" /></svg></div>
       <div className="core"><img src="/assets/plain-logo.png" alt="" /></div>
     </div>
   );

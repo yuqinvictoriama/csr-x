@@ -39,6 +39,9 @@ yarn-error.log*
 .env.*
 node_modules/
 .DS_Store
+/.openai/
+/ai-usage/
+/prev-years/
 
 # vercel
 .vercel

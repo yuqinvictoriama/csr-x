@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "CSR-x | Research Without Borders",
+  title: "CSR-x",
   description:
     "A free, online summer research experience connecting high school students across the globe.",
   icons: {

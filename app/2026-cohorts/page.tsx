@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 
 export default function CohortsPage() {
   return (
-    <InteriorPage title="2026 Cohorts" description="Explore the summer's work from each of our cohorts">
+    <InteriorPage title="2026 Cohorts" compact>
       <CohortMaterials cohorts={researchCohorts} />
     </InteriorPage>
   );

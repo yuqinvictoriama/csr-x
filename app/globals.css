@@ -299,14 +299,14 @@ footer { padding: 28px clamp(24px, 5vw, 76px); display: grid; grid-template-colu
   color: var(--card-ink); background: var(--card-base);
   border: 1px solid var(--card-accent); box-shadow: 0 8px 24px rgba(48,45,125,.06);
 }
-/* Shared discipline palette keeps cohort and mentor cards in sync: a pastel tint,
-   a softer line for borders and rings, and a deep muted ink of the same hue. */
-.material-cohort-card.tone-bmed, .cohort-card[data-discipline="Biomedical"] { --discipline-tint: #d2f0f3; --discipline-line: #9acfd3; --discipline-ink: #1a4b4e; }
-.material-cohort-card.tone-cogsci, .cohort-card[data-discipline="Cognitive"] { --discipline-tint: #efe4fd; --discipline-line: #cdbbe4; --discipline-ink: #4b3860; }
-.material-cohort-card.tone-dsml, .cohort-card[data-discipline="Data"] { --discipline-tint: #deeafe; --discipline-line: #afc5e8; --discipline-ink: #2b4267; }
-.material-cohort-card.tone-econ, .cohort-card[data-discipline="Economics"] { --discipline-tint: #f3eac5; --discipline-line: #d3c588; --discipline-ink: #4c4219; }
-.material-cohort-card.tone-envsci, .cohort-card[data-discipline="Environmental"] { --discipline-tint: #dff0d5; --discipline-line: #b4cea3; --discipline-ink: #364927; }
-.material-cohort-card { --card-base: var(--discipline-tint); --card-ink: var(--discipline-ink); --card-accent: var(--discipline-ink); --card-line: var(--discipline-line); border-color: var(--card-line); }
+/* Shared discipline palette: pale pastel fills, subtle decorative lines,
+   and deep ink in the same hue for crisp outlines and readable text. */
+.material-cohort-card.tone-bmed, .cohort-card[data-discipline="Biomedical"] { --discipline-tint: #e5f5f6; --discipline-line: #9acfd3; --discipline-ink: #1a4b4e; }
+.material-cohort-card.tone-cogsci, .cohort-card[data-discipline="Cognitive"] { --discipline-tint: #f4edfd; --discipline-line: #cdbbe4; --discipline-ink: #4b3860; }
+.material-cohort-card.tone-dsml, .cohort-card[data-discipline="Data"] { --discipline-tint: #ecf2fe; --discipline-line: #afc5e8; --discipline-ink: #2b4267; }
+.material-cohort-card.tone-econ, .cohort-card[data-discipline="Economics"] { --discipline-tint: #f9f4df; --discipline-line: #d3c588; --discipline-ink: #4c4219; }
+.material-cohort-card.tone-envsci, .cohort-card[data-discipline="Environmental"] { --discipline-tint: #edf6e7; --discipline-line: #b4cea3; --discipline-ink: #364927; }
+.material-cohort-card { --card-base: var(--discipline-tint); --card-ink: var(--discipline-ink); --card-accent: var(--discipline-ink); --card-line: var(--discipline-line); }
 .material-card-topline { position: relative; z-index: 1; width: 100%; display: flex; align-items: center; justify-content: space-between; font: 10px var(--small); letter-spacing: .15em; }
 .material-cohort-card .availability-dot { background: transparent; border: 1px solid var(--card-accent); }
 .material-cohort-card .availability-dot.is-available { background: var(--card-ink); border-color: var(--card-ink); box-shadow: 0 0 0 5px rgba(251,250,239,.3); }
@@ -367,10 +367,10 @@ footer { padding: 28px clamp(24px, 5vw, 76px); display: grid; grid-template-colu
   --mentor-tint: #ececff; --mentor-accent: #302d7d;
   position: relative; min-width: 0; height: 100%; padding: 28px; border: 1px solid #6366f1;
   border-top: 3px solid var(--mentor-accent); border-radius: 0;
-  background: linear-gradient(165deg, var(--mentor-tint), #fbfaef 58%);
+  background: var(--mentor-tint);
   box-shadow: 0 8px 24px rgba(48,45,125,.045);
 }
-.cohort-card { --mentor-tint: var(--discipline-tint); --mentor-accent: var(--discipline-line); color: var(--discipline-ink); border-color: var(--mentor-accent); }
+.cohort-card { --mentor-tint: var(--discipline-tint); --mentor-accent: var(--discipline-ink); color: var(--discipline-ink); border-color: var(--mentor-accent); }
 .cohort-card h2 { margin: 0 0 8px; padding: 0 0 24px; min-height: 84px; border-bottom: 1px solid rgba(57,48,45,.12); font-size: clamp(24px, 2vw, 31px); font-weight: 600; line-height: 1.15; letter-spacing: 0; text-wrap: balance; }
 .mentor-list, .co-mentor-list { display: grid; grid-template-columns: 1fr; gap: 0; margin: 0; }
 .mentor-entry { min-width: 0; min-height: 124px; padding: 22px 0; display: grid; grid-template-columns: 78px minmax(0, 1fr); align-items: center; gap: 18px; }

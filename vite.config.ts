@@ -14,6 +14,18 @@ const isCodexSeatbeltSandbox = process.env.CODEX_SANDBOX === "seatbelt";
 const localBindingConfig = {
   main: "./worker/index.ts",
   compatibility_flags: ["nodejs_compat"],
+  // Legacy HTML copies in the project root must not shadow current app pages.
+  // Keep scripts, images, and archived pages on the normal asset route.
+  assets: {
+    run_worker_first: [
+      "/",
+      "/index.html",
+      ...[
+        "2026-cohorts", "2026-mentors", "admin", "ai-usage", "apply",
+        "program-format", "program-policy", "resources",
+      ].flatMap((route) => [`/${route}`, `/${route}/*`]),
+    ],
+  },
   d1_databases: d1
     ? [
         {

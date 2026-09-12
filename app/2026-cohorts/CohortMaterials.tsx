@@ -32,7 +32,6 @@ export default function CohortMaterials({ cohorts }: { cohorts: ResearchCohort[]
             >
               <span className="material-card-topline">
                 <span>{cohort.code}</span>
-                <i className={`availability-dot${hasMaterials ? " is-available" : ""}`} aria-hidden="true" />
               </span>
               <div className="material-card-art" aria-hidden="true"><i /><i /><i /><span>{String(cohort.number).padStart(2, "0")}</span></div>
               <div className="material-card-copy">

@@ -64,7 +64,7 @@ export default function Home() {
         </article>
       </section>
 
-      <section className="home-admin" aria-label="The CSR-x team">
+      <section className="home-admin" id="meet-the-team" aria-label="The CSR-x team">
         <div className="home-admin-heading">
           <p className="eyebrow"><span /> The people behind the program</p>
           <h2>Meet the team</h2>

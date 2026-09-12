@@ -17,7 +17,6 @@ export default function MentorsPage() {
       <div className="cohort-grid">
         {mentorCohorts.map((cohort) => (
           <article className={`cohort-card${cohort.mentors.length > 1 ? " has-co-mentors" : ""}`} data-discipline={cohort.title.split(" ")[0]} key={cohort.title}>
-            <p className="mentor-card-kicker">2026 · Cohort {cohort.title.split(" ").at(-1)?.padStart(2, "0")}</p>
             <h2>{cohort.title}</h2>
             <div className={`mentor-list${cohort.mentors.length > 1 ? " co-mentor-list" : ""}`}>
               {cohort.mentors.map((mentor) => (

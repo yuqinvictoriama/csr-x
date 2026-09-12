@@ -57,7 +57,7 @@ export const researchCohorts: ResearchCohort[] = [
     materials: [{ type: "Poster", title: "Interpretable Neural Network Bot Detection in the LLM Era", file: "/cohort-materials/DSML5-Poster.pdf", pages: 1 }],
   },
   { id: "dsml-6", code: "DSML 06", discipline: "Data Science / Machine Learning", number: 6, materials: [] },
-  { id: "econ-3", code: "ECON 03", discipline: "Economics", number: 3, materials: [] },
+  { id: "econ-1", code: "ECON 01", discipline: "Economics", number: 1, materials: [] },
   {
     id: "envsci-1", code: "ENVSCI 01", discipline: "Environmental Science", number: 1,
     materials: [{ type: "Abstract", title: "PFAS Exposure in Drinking Water and Allergic Disease in Pediatric Populations", file: "/cohort-materials/ENVSCI1-Abstract.pdf", pages: 1 }],

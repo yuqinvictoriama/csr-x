@@ -70,7 +70,7 @@ export const mentorCohorts: MentorCohort[] = [
     { name: "Divyanka Shaw", school: "Shri Shikshayatan", grade: "High School Senior", image: "/assets/mentors/divyanka-shaw.jpg" },
     { name: "Shifa Kabir", school: "Cary High School", grade: "High School Senior", image: "/assets/mentors/shifa-kabir.jpg" },
   ] },
-  { title: "Economics 3", mentors: [
+  { title: "Economics 1", mentors: [
     { name: "Utkarsh Kailash", school: "Inventure Academy", grade: "High School Senior", image: "/assets/mentors/utkarsh-kailash.png" },
   ] },
   { title: "Environmental Science 1", mentors: [

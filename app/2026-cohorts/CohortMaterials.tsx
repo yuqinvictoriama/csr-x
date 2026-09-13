@@ -36,7 +36,7 @@ export default function CohortMaterials({ cohorts }: { cohorts: ResearchCohort[]
               <div className="material-card-art" aria-hidden="true"><i /><i /><i /><span>{String(cohort.number).padStart(2, "0")}</span></div>
               <div className="material-card-copy">
                 <h2>{cohort.discipline} {cohort.number}</h2>
-                <p className="material-card-mentors">{mentors}</p>
+                {mentors && <p className="material-card-mentors">Mentor/s: {mentors}</p>}
                 <button
                   className={`material-card-button${hasMaterials ? "" : " is-pending"}`}
                   type="button"

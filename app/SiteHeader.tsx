@@ -5,6 +5,7 @@ export const navigation = [
   { href: "/admin", label: "Admin" },
   { href: "/2026-mentors", label: "2026 Mentors" },
   { href: "/2026-cohorts", label: "2026 Cohorts" },
+  { href: "/program-policy", label: "Policy" },
   { href: "/resources", label: "Resources" },
 ];
 

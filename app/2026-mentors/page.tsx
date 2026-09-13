@@ -20,19 +20,19 @@ export default function MentorsPage() {
             <h2>{cohort.title}</h2>
             <div className={`mentor-list${cohort.mentors.length > 1 ? " co-mentor-list" : ""}`}>
               {cohort.mentors.map((mentor) => (
-                <div className="mentor-entry" key={mentor.name}>
-                  <div
+                <div className={`mentor-entry${mentor.image || mentor.initials ? "" : " is-text-only"}`} key={mentor.name}>
+                  {(mentor.image || mentor.initials) && <div
                     className={`mentor-headshot${mentor.image ? "" : " mentor-headshot-placeholder"}`}
                     aria-label={mentor.image ? undefined : `${mentor.name}, portrait not provided`}
                   >
                     {mentor.image
                       ? <img src={mentor.image} alt={`${mentor.name}, mentor for ${cohort.title}`} />
                       : <span aria-hidden="true">{mentor.initials}</span>}
-                  </div>
+                  </div>}
                   <div className="mentor-details">
                     <h3>{mentor.name}</h3>
-                    <p>{mentor.school}</p>
-                    <span>{mentor.grade}</span>
+                    {mentor.school && <p>{mentor.school}</p>}
+                    {mentor.grade && <span>{mentor.grade}</span>}
                   </div>
                 </div>
               ))}

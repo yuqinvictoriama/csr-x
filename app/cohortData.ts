@@ -26,9 +26,19 @@ export const researchCohorts: ResearchCohort[] = [
     id: "bmed-3", code: "BMED 03", discipline: "Biomedical Health Sciences", number: 3,
     materials: [{ type: "Abstract", title: "Novel Biomarker Candidates in Hypermobile Ehlers-Danlos Syndrome", file: "/cohort-materials/BMED3-Abstract.pdf", pages: 1 }],
   },
-  { id: "bmed-4", code: "BMED 04", discipline: "Biomedical Health Sciences", number: 4, materials: [] },
-  { id: "bmed-5", code: "BMED 05", discipline: "Biomedical Health Sciences", number: 5, materials: [] },
-  { id: "bmed-6", code: "BMED 06", discipline: "Biomedical Health Sciences", number: 6, materials: [] },
+  // Source PDFs retain their original numbering; BMED 5–8 map to site cohorts 4–7.
+  {
+    id: "bmed-4", code: "BMED 04", discipline: "Biomedical Health Sciences", number: 4,
+    materials: [{ type: "Paper", title: "Combining Molecular Biomarkers with Low-Dose CT for Early Lung Cancer Detection", file: "/cohort-materials/BMED5-Paper.pdf", pages: 19 }],
+  },
+  {
+    id: "bmed-5", code: "BMED 05", discipline: "Biomedical Health Sciences", number: 5,
+    materials: [{ type: "Abstract", title: "Comparative Analysis of Osimertinib and BDTX-1535 Binding Affinities Against Wild-Type and Mutated Epidermal Growth Factor Receptor (EGFR kinase domains)", file: "/cohort-materials/BMED6-Abstract.pdf", pages: 1 }],
+  },
+  {
+    id: "bmed-6", code: "BMED 06", discipline: "Biomedical Health Sciences", number: 6,
+    materials: [{ type: "Abstract", title: "Peripheral Blood Immune Gene Dysregulation in Parkinson’s Disease: A Computational Analysis Supporting the Gut-Brain Axis Hypothesis", file: "/cohort-materials/BMED7-Abstract.pdf", pages: 1 }],
+  },
   {
     id: "bmed-7", code: "BMED 07", discipline: "Biomedical Health Sciences", number: 7,
     materials: [{ type: "Paper", title: "Virus-Induced CRISPR Therapy vs. RNAi Gene Regulation for Cancer-Linked Gene Expression", file: "/cohort-materials/BMED8-Paper.pdf", pages: 12 }],
@@ -50,13 +60,22 @@ export const researchCohorts: ResearchCohort[] = [
     materials: [{ type: "Abstract", title: "Machine Learning for Solar Energetic Proton Shielding Analysis", file: "/cohort-materials/DSML1-Abstract.pdf", pages: 1 }],
   },
   { id: "dsml-2", code: "DSML 02", discipline: "Data Science / Machine Learning", number: 2, materials: [] },
-  { id: "dsml-3", code: "DSML 03", discipline: "Data Science / Machine Learning", number: 3, materials: [] },
-  { id: "dsml-4", code: "DSML 04", discipline: "Data Science / Machine Learning", number: 4, materials: [] },
+  {
+    id: "dsml-3", code: "DSML 03", discipline: "Data Science / Machine Learning", number: 3,
+    materials: [{ type: "Paper", title: "Evaluating Physics-Informed Neural Network Variants for Nonlinear Dynamical Systems: A Case Study of the Van der Pol Oscillator", file: "/cohort-materials/DSML3-Paper.pdf", pages: 15 }],
+  },
+  {
+    id: "dsml-4", code: "DSML 04", discipline: "Data Science / Machine Learning", number: 4,
+    materials: [{ type: "Abstract", title: "Detecting Early Blight Disease Severity within Tomato Plants Utilizing Machine Learning", file: "/cohort-materials/DSML4-Abstract.pdf", pages: 1 }],
+  },
   {
     id: "dsml-5", code: "DSML 05", discipline: "Data Science / Machine Learning", number: 5,
     materials: [{ type: "Poster", title: "Interpretable Neural Network Bot Detection in the LLM Era", file: "/cohort-materials/DSML5-Poster.pdf", pages: 1 }],
   },
-  { id: "dsml-6", code: "DSML 06", discipline: "Data Science / Machine Learning", number: 6, materials: [] },
+  {
+    id: "dsml-6", code: "DSML 06", discipline: "Data Science / Machine Learning", number: 6,
+    materials: [{ type: "Abstract", title: "A Hybrid Quantum-Classical Model For Detecting & Mitigating Large Language Model Hallucinations", file: "/cohort-materials/DSML6-Abstract.pdf", pages: 1 }],
+  },
   { id: "econ-1", code: "ECON 01", discipline: "Economics", number: 1, materials: [] },
   {
     id: "envsci-1", code: "ENVSCI 01", discipline: "Environmental Science", number: 1,

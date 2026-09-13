@@ -1,7 +1,7 @@
 export type Mentor = {
   name: string;
-  school: string;
-  grade: string;
+  school?: string;
+  grade?: string;
   image?: string;
   initials?: string;
 };
@@ -33,7 +33,7 @@ export const mentorCohorts: MentorCohort[] = [
   ] },
   { title: "Biomedical Health Sciences 6", mentors: [
     { name: "Alekhya Buragadda", school: "Union College", grade: "College Sophomore", image: "/assets/mentors/alekhya-buragadda.png" },
-    { name: "Bilal Iqbal", school: "Simon G. Atkins Academic and Technology High School", grade: "High School Junior", image: "/assets/mentors/bilal-iqbal.jpg" },
+    { name: "Bilal Iqbal" },
   ] },
   { title: "Biomedical Health Sciences 7", mentors: [
     { name: "Audrey Finkelstein", school: "Albuquerque Academy", grade: "High School Senior", image: "/assets/mentors/audrey-finkelstein.png" },

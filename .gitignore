@@ -42,6 +42,7 @@ node_modules/
 /.openai/
 /ai-usage/
 /prev-years/
+/policy/
 
 # vercel
 .vercel
